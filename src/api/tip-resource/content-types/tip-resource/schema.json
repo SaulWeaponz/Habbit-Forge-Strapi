@@ -1,0 +1,21 @@
+{
+  "kind": "collectionType",
+  "collectionName": "tip_resources",
+  "info": {
+    "singularName": "tip-resource",
+    "pluralName": "tip-resources",
+    "displayName": "tip-resource"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "link": {
+      "type": "text"
+    }
+  }
+}

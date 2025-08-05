@@ -1,0 +1,49 @@
+{
+  "kind": "collectionType",
+  "collectionName": "habits",
+  "info": {
+    "singularName": "habit",
+    "pluralName": "habits",
+    "displayName": "Habit"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "frequency": {
+      "type": "string"
+    },
+    "startDate": {
+      "type": "date"
+    },
+    "endDate": {
+      "type": "date"
+    },
+     "completedDates": {
+      "type": "json",
+      "default":[]
+    },
+    "accountabilityPartner": {
+  "type": "relation",
+  "relation": "oneToOne",
+  "target": "plugin::users-permissions.user"
+}
+,"owner": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "plugin::users-permissions.user"
+    },
+    "partner": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "plugin::users-permissions.user"
+    }
+  }
+}
