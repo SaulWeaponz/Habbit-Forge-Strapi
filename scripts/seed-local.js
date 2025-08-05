@@ -2,7 +2,7 @@ const axios = require('axios');
 require('dotenv').config();
 
 // Configuration - Update these values
-const STRAPI_URL = "https://your-app-name.onrender.com/api"; // Replace with your actual Render URL
+const STRAPI_URL = process.env.STRAPI_URL || "https://your-app-name.onrender.com/api"; // Set this in .env file
 const STRAPI_LOGIN_URL = `${STRAPI_URL}/auth/local`;
 
 // Admin credentials - Set these in your local .env file
