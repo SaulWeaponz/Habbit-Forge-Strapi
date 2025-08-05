@@ -1,6 +1,9 @@
 module.exports = ({ env }) => ({
   'users-permissions': {
-    enabled: true
+    enabled: true,
+    config: {
+      jwtSecret: env('ADMIN_JWT_SECRET'),
+    },
   },
 
   // Only enable email in production or when explicitly needed
